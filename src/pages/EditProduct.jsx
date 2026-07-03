@@ -23,7 +23,7 @@ function EditProduct({ products, onUpdate }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     onUpdate(id, { name, price: parseFloat(price) || 0, description });
-    navigate('/products'); // ریدایرکت پس از آپدیت بر اساس استیکی‌نوت وایرفریم
+    navigate('/products'); 
   };
 
   return (
